@@ -1,0 +1,735 @@
+.navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.89333rem;
+    background: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_bottom.png") no-repeat left center;
+    background-size: 10rem 1.89333rem;
+    z-index: 10
+}
+
+.navigation .wrap {
+    height: 1.33333rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex
+}
+
+.navigation .center {
+    width: 1.68rem;
+    height: 1.68rem;
+    position: relative;
+    top: -.32rem
+}
+
+.navigation .center .icon {
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0 auto;
+    margin-top: .26667rem;
+    background-size: 1.2rem 1.2rem;
+    background-repeat: no-repeat;
+    margin-bottom: .04rem
+}
+
+.navigation .right a:first-child {
+    margin-left: .72rem !important
+}
+
+.navigation .left,
+.navigation .right {
+    display: flex;
+    position: relative;
+    z-index: 12;
+    flex: 1;
+    align-items: center
+}
+
+.navigation .left>a,
+.navigation .right>a {
+    outline: none;
+    margin-top: .13333rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+.navigation .left>a:first-child,
+.navigation .right>a:first-child {
+    margin-left: .62667rem;
+    margin-right: 1.25333rem
+}
+
+.navigation .left>a .icon,
+.navigation .right>a .icon {
+    display: block;
+    width: .53333rem;
+    height: .53333rem;
+    background-size: .53333rem .53333rem;
+    background-repeat: no-repeat;
+    margin-bottom: .04rem
+}
+
+.navigation .left>a .name,
+.navigation .right>a .name {
+    font-size: .37333rem;
+    line-height: .53333rem;
+    color: #D8D8D8
+}
+
+.navigation .left>a.active .name,
+.navigation .right>a.active .name {
+    color: #2A2B2F
+}
+
+.navigation .nav-home .icon {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_home02.png")
+}
+
+.navigation .nav-home.active .icon {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_home.png")
+}
+
+.navigation .nav-appoint .icon {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_appointment.png")
+}
+
+.navigation .nav-appoint.active .icon {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_appointment02.png")
+}
+
+.navigation .nav-im .icon {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_im.png")
+}
+
+.navigation .nav-im.active .icon,
+.navigation .nav-im:active .icon,
+.navigation .nav-im:hover .icon {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_im02.png")
+}
+
+.navigation .nav-im.active .name,
+.navigation .nav-im:active .name,
+.navigation .nav-im:hover .name {
+    color: #2A2B2F
+}
+
+.navigation .nav-gift .icon {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_gift.png")
+}
+
+.navigation .nav-gift.active .icon {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_gift02.png")
+}
+
+.navigation .nav-call .icon {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_call.png")
+}
+
+.navigation .nav-call:focus .icon {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_call02.png")
+}
+
+.headroom {
+    transition: transform 200ms linear
+}
+
+.headroom--pinned {
+    transform: translateY(0%)
+}
+
+.headroom--unpinned {
+    transform: translateY(100%)
+}
+
+html,
+body {
+    background-color: #f5f5f5
+}
+
+body {
+    padding-bottom: 1.68rem
+}
+
+.header {
+    width: 10rem;
+    height: 10rem;
+    background-color: rgba(20, 196, 169, 0.6);
+    background: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/banner01.jpg") no-repeat;
+    background-size: 10rem 10rem
+}
+
+.header .menu {
+    width: 9.2rem;
+    height: 4.4rem;
+    border-radius: .10667rem;
+    position: relative;
+    top: 8.53333rem;
+    background-color: #fff;
+    margin: 0 auto
+}
+
+.header .menu ul {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    overflow: hidden;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.header .menu ul li {
+    margin: 0 .4rem;
+    margin-top: .13333rem;
+    width: 1.49333rem
+}
+
+.header .menu ul li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: .34667rem;
+    color: #4E5358;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.header .menu ul li a>p {
+    line-height: .53333rem
+}
+
+.header .menu ul li .icon {
+    display: block;
+    width: 1.056rem;
+    height: 1.056rem;
+    background-size: 1.056rem 1.056rem;
+    background-repeat: no-repeat;
+    margin-bottom: .09867rem
+}
+
+.header .menu ul li .icon.gkcj {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_gaokao.png")
+}
+
+.header .menu ul li .icon.xkcj {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_opt_gaokao.png")
+}
+
+.header .menu ul li .icon.myfz {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_high_school.png")
+}
+
+.header .menu ul li .icon.xfgx {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_van_school.png")
+}
+
+.header .menu ul li .icon.ffcj {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_scores.png")
+}
+
+.header .menu ul li .icon.yxxy {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_students.png")
+}
+
+.header .menu ul li .icon.xqjs {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_campus.png")
+}
+
+.header .menu ul li .icon.gyff {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_about.png")
+}
+
+.main {
+    margin-top: 2.93333rem;
+    overflow: hidden
+}
+
+.main .banner ul {
+    overflow: hidden
+}
+
+.main .banner ul li {
+    width: 9.2rem;
+    margin: .26667rem auto 0;
+    position: relative;
+    border-radius: .10667rem
+}
+
+.main .banner ul li img {
+    width: 9.2rem;
+    border-radius: .10667rem;
+    display: block
+}
+
+.main .banner ul li a {
+    display: block;
+    width: 100%;
+}
+
+.main .top-article {
+    width: 9.2rem;
+    height: 5.86667rem;
+    margin: .26667rem auto 0;
+    border-radius: .10667rem;
+    background-color: #fff;
+    padding-left: .30667rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden
+}
+
+.main .top-article h2 {
+    font-weight: normal;
+    font-size: .45333rem;
+    color: #2F3030;
+    margin-top: .41333rem;
+    line-height: .64rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.main .top-article h2 a {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding-right: .34667rem;
+    text-align: right;
+    font-size: .37333rem;
+    color: #86888A
+}
+
+.main .top-article .articles {
+    margin-top: .24rem
+}
+
+.main .top-article .articles a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.main .top-article .articles a p {
+    margin-top: .21333rem;
+    width: 6.57333rem;
+    height: 1.17333rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    line-height: .56rem;
+    font-size: .37333rem
+}
+
+.main .top-article .articles a .img-wrap {
+    width: 2.33333rem;
+    height: 1.36rem;
+    position: relative
+}
+
+.main .top-article .articles a .img-wrap img {
+    width: 1.86667rem;
+    height: 1.17333rem;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 0
+}
+
+.main .top-article .articles li {
+    margin-bottom: .08rem
+}
+
+.main .top-article .articles li:last-child {
+    margin-bottom: 0
+}
+
+.main .ff-score {
+    overflow: hidden;
+    width: 9.2rem;
+    height: 6.4rem;
+    margin: .26667rem auto 0;
+    border-radius: .10667rem;
+    background-color: #fff
+}
+
+.main .ff-score h2 {
+    margin: .28rem 0 .28rem .24rem;
+    font-weight: normal;
+    font-size: .45333rem;
+    color: #2F3030
+}
+
+.main .ff-score .swiper-slide {
+    margin-left: .26667rem;
+    width: 2.98667rem !important;
+    display: block
+}
+
+.main .ff-score .swiper-slide .img {
+    width: 2.98667rem;
+    height: 4.13333rem;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: .12rem;
+    border-radius: .10667rem
+}
+
+.main .ff-score .swiper-slide .img img {
+    border-radius: .10667rem;
+    width: 2.98667rem;
+    height: 4.13333rem
+}
+
+.main .ff-score .swiper-slide .name {
+    text-align: center;
+    color: #2F3030;
+    font-size: .37333rem;
+    line-height: .53333rem
+}
+
+.main .ff-teacher {
+    width: 9.2rem;
+    height: 6.4rem;
+    background-color: #fff;
+    margin: .26667rem auto 0;
+    border-radius: .10667rem;
+    overflow: hidden
+}
+
+.main .ff-teacher h2 {
+    margin: .28rem 0 .28rem .24rem;
+    font-weight: normal;
+    font-size: .45333rem;
+    color: #2F3030;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.main .ff-teacher h2 a {
+    color: #86888A;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: .37333rem;
+    text-align: right;
+    padding-right: .37333rem
+}
+
+.main .ff-teacher .swiper-slide {
+    margin-left: .26667rem;
+    width: 2.98667rem !important;
+    display: block
+}
+
+.main .ff-teacher .swiper-slide .img {
+    width: 2.98667rem;
+    height: 4.13333rem;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: .12rem;
+    border-radius: .10667rem
+}
+
+.main .ff-teacher .swiper-slide .img img {
+    width: 4.13333rem;
+    height: 4.13333rem;
+    border-radius: .10667rem;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.main .ff-teacher .swiper-slide .img .label {
+    display: block;
+    position: absolute;
+    width: 1.6rem;
+    background-color: #FADC17;
+    font-size: .32rem;
+    color: #2F3030;
+    text-align: center;
+    height: 1.2rem;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    left: -.65rem;
+    top: -.45rem;
+    line-height: 1.86667rem;
+    z-index: 1
+}
+
+.main .ff-teacher .swiper-slide .name {
+    text-align: center;
+    color: #2F3030;
+    font-size: .37333rem;
+    line-height: .53333rem
+}
+
+.main .ff-school {
+    width: 9.2rem;
+    height: 6.4rem;
+    background-color: #fff;
+    margin: .26667rem auto 0;
+    border-radius: .10667rem;
+    overflow: hidden
+}
+
+.main .ff-school h2 {
+    margin: .38667rem 0 .38667rem .24rem;
+    font-weight: normal;
+    font-size: .45333rem;
+    color: #2F3030;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.main .ff-school h2 a {
+    color: #86888A;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: .37333rem;
+    text-align: right;
+    padding-right: .37333rem
+}
+
+.main .ff-school .swiper-slide {
+    width: 7.33333rem !important;
+    margin-left: .13333rem;
+    margin-right: .13333rem;
+    display: block
+}
+
+.main .ff-school .swiper-slide .img {
+    width: 7.33333rem;
+    height: 4rem;
+    border-radius: .10667rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.main .ff-school .swiper-slide .img img {
+    width: 7.33333rem;
+    height: 4rem;
+    border-radius: .10667rem
+}
+
+.main .ff-school .swiper-slide .name {
+    text-align: center;
+    color: #3F4040;
+    font-size: .37333rem;
+    line-height: .53333rem;
+    margin-top: .37333rem
+}
+
+.main .ff-school .swiper-slide.swiper-slide-active .img img {
+    height: 4rem;
+    -webkit-box-shadow: 0 .06667rem .10667rem rgba(0, 0, 0, 0.11);
+    box-shadow: 0 .06667rem .10667rem rgba(0, 0, 0, 0.11)
+}
+
+.main .ff-student {
+    width: 9.2rem;
+    height: 6.4rem;
+    background-color: #fff;
+    margin: .26667rem auto 0;
+    border-radius: .10667rem;
+    overflow: hidden
+}
+
+.main .ff-student h2 {
+    margin: .28rem 0 .28rem .24rem;
+    font-weight: normal;
+    font-size: .45333rem;
+    color: #2F3030;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.main .ff-student h2 a {
+    color: #86888A;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: .37333rem;
+    text-align: right;
+    padding-right: .37333rem
+}
+
+.main .ff-student .swiper-slide {
+    margin-left: .26667rem;
+    width: 2.98667rem !important;
+    display: block
+}
+
+.main .ff-student .swiper-slide .img {
+    width: 2.98667rem;
+    height: 4.13333rem;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: .12rem;
+    border-radius: .10667rem
+}
+
+.main .ff-student .swiper-slide .img img {
+    width: 4.13333rem;
+    height: 4.13333rem;
+    border-radius: .10667rem;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.main .ff-student .swiper-slide .img .label {
+    display: block;
+    position: absolute;
+    width: 1.6rem;
+    background-color: #FADC17;
+    font-size: .32rem;
+    color: #2F3030;
+    text-align: center;
+    height: 1.2rem;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    left: -.65rem;
+    top: -.45rem;
+    line-height: 1.86667rem;
+    z-index: 1
+}
+
+.main .ff-student .swiper-slide .name {
+    text-align: center;
+    color: #2F3030;
+    font-size: .37333rem;
+    line-height: .53333rem
+}
+
+.main .ff-ads {
+    overflow: hidden
+}
+
+.main .ff-ads .ad-why {
+    margin-top: .26667rem;
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: .26667rem
+}
+
+.main .ff-ads .ad-why .item {
+    margin: 0 auto;
+    margin-bottom: .4rem;
+    background-color: greenyellow;
+    width: 9.2rem;
+    height: 9.73333rem;
+    -webkit-box-shadow: 0 .06667rem .10667rem rgba(0, 0, 0, 0.11);
+    box-shadow: 0 .06667rem .10667rem rgba(0, 0, 0, 0.11);
+    border-radius: .10667rem
+}
+
+.main .ff-ads .ad-why img {
+    width: 100%
+}
+
+.main .ff-ads .ad-free {
+    margin-top: .26667rem;
+    background: #fff;
+    width: 100%;
+    padding-bottom: .26667rem
+}
+
+.main .ff-ads .ad-free .ad-free-header {
+    height: 2.28rem;
+    margin-left: .4rem;
+    color: #2F3030;
+    overflow: hidden;
+    background: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/FREE.png") no-repeat;
+    background-size: 5.46667rem 1.49333rem;
+    background-position: right top
+}
+
+.main .ff-ads .ad-free .ad-free-header .sub-title {
+    font-size: .4rem;
+    line-height: .56rem;
+    margin-top: .4rem
+}
+
+.main .ff-ads .ad-free .ad-free-header h2 {
+    font-size: .53333rem;
+    line-height: .74667rem
+}
+
+.main .ff-ads .ad-free .item {
+    margin: 0 auto;
+    margin-bottom: .4rem;
+    width: 9.2rem;
+    height: 3.90667rem
+}
+
+.main .ff-ads .ad-free .item a {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+.main .ff-ads .ad-free .item a img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: .10667rem;
+    -webkit-box-shadow: 0 .06667rem .10667rem rgba(0, 0, 0, 0.11);
+    box-shadow: 0 .06667rem .10667rem rgba(0, 0, 0, 0.11)
+}
+
+.footer {
+    margin-top: .26667rem;
+    font-size: .37333rem;
+    line-height: .53333rem;
+    color: #86888A;
+    text-align: center
+}

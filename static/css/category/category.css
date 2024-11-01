@@ -1,0 +1,333 @@
+.clear:after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0
+}
+
+.float-left {
+    float: left
+}
+
+.float-right {
+    float: right
+}
+
+.nav {
+    height: 40px;
+    position: relative
+}
+
+.nav a {
+    color: #383838
+}
+
+.nav .nav-first {
+    display: flex;
+    height: 100%
+}
+
+.nav .nav-first>li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all .5s
+}
+
+.nav .nav-first>li.active .nav-second {
+    display: block
+}
+
+.nav .nav-first>li.teacher-power .nav-second {
+    background: rgba(255, 255, 255, 0.5)
+}
+
+.nav .nav-first>li:hover {
+    background-color: #FFE100
+}
+
+.nav .nav-first>li:first-child {
+    width: 250px
+}
+
+.nav .nav-first>li:not(:first-child) {
+    padding: 0 46px
+}
+
+.nav .nav-first>li.active {
+    background-color: #FFE100
+}
+
+.nav .nav-second {
+    display: none;
+    top: 40px;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #fff, transparent)
+}
+
+.nav .nav-second>li {
+    height: 69px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 1px;
+    position: relative;
+    transition: all .5s
+}
+
+.nav .nav-second>li:hover {
+    background-color: #fff
+}
+
+.nav .nav-second>li:hover .icon-right {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/img/home/jiant02.png")
+}
+
+.nav .nav-second>li a {
+    color: #919191
+}
+
+.nav .nav-second>li:not(:last-child):after {
+    content: '';
+    position: absolute;
+    width: calc(100% - 30px);
+    bottom: 0;
+    height: 1px;
+    left: 15px;
+    background-color: #e6e6e6
+}
+
+.nav .nav-second>li .icon-right {
+    width: 6px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/img/home/jiant01.png")
+}
+
+.nav .nav-third {
+    position: absolute;
+    top: 10px;
+    left: 100%;
+    width: 450px;
+    min-height: 100px;
+    background-color: #fff;
+    display: none;
+    padding: 10px 25px 10px 15px
+}
+
+.nav .nav-third>li {
+    padding: 20px 20px 20px 15px
+}
+
+.nav .nav-third>li b {
+    color: #282727
+}
+
+.nav .nav-third>li .head {
+    font-weight: bold;
+    color: #282727;
+    float: left
+}
+
+.nav .nav-third>li .main {
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 80px
+}
+
+.nav .nav-third>li .main a {
+    display: block;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    color: #808080
+}
+
+.nav .nav-third>li .main a:hover {
+    color: #1297DA
+}
+
+.nav .nav-third>li:not(:last-child) {
+    border-bottom: 1px solid #E6E6E6
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+a {
+    text-decoration: none
+}
+
+.page {
+    width: 100%;
+}
+
+.frontCover {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/img/campus/frontCover.png");
+    background-size: 100% 100%;
+    z-index: 1
+}
+
+.main {
+    width: 100%;
+    margin: 0;
+    padding: 0
+}
+
+.main .campusIntroduction {
+    width: 1200px;
+    margin: 0 auto
+}
+
+.main .campusIntroduction>li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 320px;
+    margin: 120px auto;
+    list-style-type: none
+}
+
+.main .campusIntroduction>li .campusImg {
+    width: 480px;
+    height: 100%;
+    overflow: hidden;
+    background-color: #d8d8d8
+}
+
+.main .campusIntroduction>li .campusImg>img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .8s;
+    transition: all .8s
+}
+
+.main .campusIntroduction>li .campusImg:hover>img {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4)
+}
+
+.main .campusIntroduction>li .interval {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    width: 90px;
+    height: 100%
+}
+
+.main .campusIntroduction>li .briefIntroduction {
+    position: relative;
+    width: 630px;
+    height: 100%
+}
+
+.main .campusIntroduction>li .briefIntroduction .title {
+    font-size: 46px;
+    color: #282727;
+    line-height: 65px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    text-align: left
+}
+
+.main .campusIntroduction>li .briefIntroduction .content {
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    color: #696969;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: left
+}
+
+.main .campusIntroduction>li .briefIntroduction .btn {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transition: .6s;
+    transition: .6s
+}
+
+.main .campusIntroduction>li .briefIntroduction .btn>a>i {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+
+.main .campusIntroduction>li:nth-child(odd) .campusImg {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1
+}
+
+.main .campusIntroduction>li:nth-child(odd) .briefIntroduction {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3
+}
+
+.main .campusIntroduction>li:nth-child(odd) .briefIntroduction .content {
+    padding-right: 80px
+}
+
+.main .campusIntroduction>li:nth-child(odd) .briefIntroduction .btn {
+    right: 0
+}
+
+.main .campusIntroduction>li:nth-child(odd) .briefIntroduction .btn>a>i {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/img/campus/right.png")
+}
+
+.main .campusIntroduction>li:nth-child(even) .campusImg {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3
+}
+
+.main .campusIntroduction>li:nth-child(even) .briefIntroduction {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1
+}
+
+.main .campusIntroduction>li:nth-child(even) .briefIntroduction .content {
+    padding-left: 80px
+}
+
+.main .campusIntroduction>li:nth-child(even) .briefIntroduction .btn {
+    left: 0
+}
+
+.main .campusIntroduction>li:nth-child(even) .briefIntroduction .btn>a>i {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/img/campus/left.png")
+}
+
+.main .campusIntroduction>li:hover .briefIntroduction .btn {
+    opacity: 1
+}
+
+.bottom {
+    width: 100%;
+    height: 230px;
+    background-color: #282828
+}

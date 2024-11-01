@@ -1,0 +1,171 @@
+.header {
+    height: 4.26667rem;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    background: url("../../img/signUp/icon_top_pic.png") no-repeat;
+    background-size: 100% 100%
+}
+
+.title {
+    height: 1.41333rem;
+    text-align: center;
+    background-color: #151002;
+    font-size: .4rem;
+    line-height: 1.41333rem;
+    color: #fff
+}
+
+.signUp {
+    margin-top: 1.26667rem
+}
+
+.signUp .name,
+.signUp .mobile {
+    width: 7.86667rem;
+    border-bottom: .02667rem #E6E6E6 solid;
+    padding-bottom: .30667rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.signUp .name label,
+.signUp .mobile label {
+    display: block;
+    width: .44rem;
+    height: .44rem;
+    margin-right: .24rem;
+    background-size: .44rem .44rem;
+    background-repeat: no-repeat;
+    background-image: url("../../img/signUp/icon_user.png")
+}
+
+.signUp .name label.active,
+.signUp .mobile label.active {
+    background-image: url("../../img/signUp/icon_user02.png")
+}
+
+.signUp .name input,
+.signUp .mobile input {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border: none;
+    outline: none;
+    line-height: .56rem;
+    font-size: .4rem
+}
+
+.signUp .mobile {
+    margin-top: .46667rem
+}
+
+.signUp .mobile label {
+    background-image: url("../../img/signUp/icon_telephone.png")
+}
+
+.signUp .mobile label.active {
+    background-image: url("../../img/signUp/icon_telephone02.png")
+}
+
+.signUp .option {
+    margin-top: .6rem;
+    margin-bottom: 1.34667rem;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 1.22667rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.signUp .option>label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: .4rem;
+    margin-bottom: .33333rem;
+    margin-right: 1.33333rem;
+    color: #ADADAD
+}
+
+.signUp .option>label input {
+    border: none;
+    margin-right: .13333rem
+}
+
+#submitBtn {
+    width: 7.33333rem;
+    height: 1.17333rem;
+    line-height: 1.17333rem;
+    background-color: #FBDD20;
+    color: #333;
+    border: none;
+    outline: none;
+    border-radius: .73333rem;
+    font-size: .45333rem;
+    margin: 0 auto;
+    display: block;
+    -webkit-transition: opacity .5s ease;
+    transition: opacity .5s ease
+}
+
+#submitBtn:disabled {
+    opacity: .2
+}
+
+.popup {
+    display: none
+}
+
+.popup .mask {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.popup .content {
+    width: 7.33333rem;
+    height: 7.6rem;
+    background: url("../../img/signUp/icon_succse.png") no-repeat;
+    background-size: 7.33333rem 7.6rem;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.popup .content .back {
+    position: absolute;
+    width: 3.25333rem;
+    height: .8rem;
+    line-height: .8rem;
+    text-align: center;
+    border-radius: .77333rem;
+    background-color: #FADC17;
+    bottom: .54667rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-size: .4rem;
+    color: #212224
+}

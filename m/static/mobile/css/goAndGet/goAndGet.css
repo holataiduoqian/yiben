@@ -1,0 +1,210 @@
+.header {
+    height: 4.26667rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url("/static/img/goAndGet/banner.png") no-repeat;
+    background-size: 100% 100%
+}
+
+.banner ul li {
+    position: relative;
+    width: 9.2rem;
+    height: 3.90667rem;
+    margin-top: .53333rem;
+    margin-left: .4rem
+}
+
+.banner ul li a {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+.banner ul li a img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    -webkit-box-shadow: 0 .06667rem .10667rem rgba(0, 0, 0, 0.11);
+    box-shadow: 0 .06667rem .10667rem rgba(0, 0, 0, 0.11);
+    border-radius: .10667rem
+}
+
+.banner ul li a img.slice {
+    -webkit-box-shadow: 0 .06667rem .10667rem rgba(141, 106, 254, 0.11);
+    box-shadow: 0 .06667rem .10667rem rgba(141, 106, 254, 0.11)
+}
+
+.banner ul li a img.fz {
+    -webkit-box-shadow: 0 .06667rem .10667rem rgba(77, 169, 246, 0.11);
+    box-shadow: 0 .06667rem .10667rem rgba(77, 169, 246, 0.11)
+}
+
+.banner ul li a img.gkxk {
+    -webkit-box-shadow: 0 .06667rem .10667rem rgba(255, 124, 73, 0.11);
+    box-shadow: 0 .06667rem .10667rem rgba(255, 124, 73, 0.11)
+}
+
+.banner ul li a img.xiaofan {
+    -webkit-box-shadow: 0 .06667rem .10667rem rgba(254, 170, 63, 0.11);
+    box-shadow: 0 .06667rem .10667rem rgba(254, 170, 63, 0.11)
+}
+
+.banner ul li:last-child {
+    margin-bottom: 2rem
+}
+
+.navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.89333rem;
+    background: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_bottom.png") no-repeat left center;
+    background-size: 10rem 1.89333rem;
+    z-index: 10
+}
+
+.navigation .wrap {
+    height: 1.33333rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.navigation .center {
+    width: 1.68rem;
+    height: 1.68rem;
+    position: relative;
+    top: -.32rem
+}
+
+.navigation .center .icon {
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0 auto;
+    margin-top: .26667rem;
+    background-size: 1.2rem 1.2rem;
+    background-repeat: no-repeat;
+    margin-bottom: .04rem
+}
+
+.navigation .right a:first-child {
+    margin-left: .72rem !important
+}
+
+.navigation .left,
+.navigation .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    z-index: 12;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.navigation .left>a,
+.navigation .right>a {
+    outline: none;
+    margin-top: .13333rem;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.navigation .left>a:first-child,
+.navigation .right>a:first-child {
+    margin-left: .62667rem;
+    margin-right: 1.25333rem
+}
+
+.navigation .left>a .icon,
+.navigation .right>a .icon {
+    display: block;
+    width: .53333rem;
+    height: .53333rem;
+    background-size: .53333rem .53333rem;
+    background-repeat: no-repeat;
+    margin-bottom: .04rem
+}
+
+.navigation .left>a .name,
+.navigation .right>a .name {
+    font-size: .37333rem;
+    line-height: .53333rem;
+    color: #D8D8D8
+}
+
+.navigation .left>a.active .name,
+.navigation .right>a.active .name {
+    color: #2A2B2F
+}
+
+.navigation .nav-home .icon {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_home02.png")
+}
+
+.navigation .nav-home.active .icon {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_home.png")
+}
+
+.navigation .nav-appoint .icon {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_appointment.png")
+}
+
+.navigation .nav-appoint.active .icon {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_appointment02.png")
+}
+
+.navigation .nav-im .icon {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_im.png")
+}
+
+.navigation .nav-im.active .icon,
+.navigation .nav-im:active .icon,
+.navigation .nav-im:hover .icon {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_im02.png")
+}
+
+.navigation .nav-im.active .name,
+.navigation .nav-im:active .name,
+.navigation .nav-im:hover .name {
+    color: #2A2B2F
+}
+
+.navigation .nav-gift .icon {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_gift.png")
+}
+
+.navigation .nav-gift.active .icon {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_gift02.png")
+}
+
+.navigation .nav-call .icon {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_call.png")
+}
+
+.navigation .nav-call.active .icon {
+    background-image: url("http://cdn.xuansiwei.com/tangt1156/static/mobile/img/home/icon_call02.png")
+}
